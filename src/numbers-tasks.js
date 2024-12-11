@@ -326,7 +326,7 @@ function getSumToN(n) {
 function getSumOfDigits(num) {
   let sum = 0;
   let num1 = num;
-  for (let i = 0; i < num; i += 1) {
+  while (num1 > 0) {
     sum += num1 % 10;
     num1 = Math.floor(num1 / 10);
   }
